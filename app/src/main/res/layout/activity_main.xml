@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="assaf.zfani.simplecursoradapter.MainActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="91dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/editTextFamily"
+        android:layout_alignStart="@+id/editTextFamily"
+        android:layout_marginTop="75dp" />
+
+    <EditText
+        android:id="@+id/editTextFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="154dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/editTextName"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonSaved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Save"
+        android:layout_below="@+id/editTextFamily"
+        android:layout_alignLeft="@+id/editTextFamily"
+        android:layout_alignStart="@+id/editTextFamily" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonSaved"
+        android:layout_alignEnd="@+id/editTextFamily"
+        android:layout_alignRight="@+id/editTextFamily"
+        android:text="Show All" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonSaved"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp" />
+
+    <Button
+        android:id="@+id/buttonStartWith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonSaved"
+        android:layout_centerHorizontal="true"
+        android:text="Show Start With" />
+</RelativeLayout>
